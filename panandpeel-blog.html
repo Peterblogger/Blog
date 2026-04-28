@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- PRIMARY SEO -->
+  <title>Best Pizza in Pearl River NY | Pan and Peel Pizza Review | @siscamoves</title>
+  <meta name="description" content="If you haven't been to Pan and Peel Pizza on Main Street in Pearl River, NY — you're missing the best slice in Rockland County. Hand-fermented dough, fresh mozzarella made in-house daily, whole Italian tomatoes. @siscamoves breaks it down." />
+  <meta name="keywords" content="best pizza Pearl River NY, Pan and Peel Pizza, pizza Rockland County, pizza near me Pearl River, pizza Nanuet, pizza Orangetown, Neapolitan pizza Rockland County, New York pizza Pearl River, siscamoves, pizza Park Ridge NJ, best pizza near Nyack, Pearl River restaurants, pizza delivery Pearl River NY, fresh mozzarella pizza Rockland, pepperoni hot honey pizza, burrata pizza Pearl River" />
+  <meta name="author" content="Peter @siscamoves" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- CANONICAL -->
+  <link rel="canonical" href="https://peterblogger.github.io/Blog/panandpeel-blog.html" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://peterblogger.github.io/Blog/panandpeel-blog.html" />
+  <meta property="og:title" content="Best Pizza in Pearl River NY | Pan and Peel Pizza | @siscamoves" />
+  <meta property="og:description" content="Hand-fermented dough, fresh mozzarella made in-house daily, whole Italian tomatoes. Pan and Peel Pizza on Main Street in Pearl River is the best slice in Rockland County — and @siscamoves has the receipts." />
+  <meta property="og:image" content="https://img.youtube.com/vi/XOb4vYKSO6E/maxresdefault.jpg" />
+  <meta property="og:site_name" content="siscamoves" />
+  <meta property="article:author" content="@siscamoves" />
+  <meta property="article:published_time" content="2026-04-28" />
+  <meta property="article:tag" content="Pearl River pizza" />
+  <meta property="article:tag" content="Pan and Peel" />
+  <meta property="article:tag" content="Rockland County food" />
+  <meta property="article:tag" content="best pizza NY" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://peterblogger.github.io/Blog/panandpeel-blog.html" />
+  <meta name="twitter:title" content="Best Pizza in Pearl River NY | Pan and Peel Pizza | @siscamoves" />
+  <meta name="twitter:description" content="Hand-fermented dough, in-house mozzarella, whole Italian tomatoes. Pan and Peel Pizza is the best slice in Rockland County." />
+  <meta name="twitter:image" content="https://img.youtube.com/vi/XOb4vYKSO6E/maxresdefault.jpg" />
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --tomato: #c8341a;
+      --tomato-dark: #8f2410;
+      --cream: #faf6f0;
+      --dark: #1a1410;
+      --charcoal: #2e2a26;
+      --tan: #8a7560;
+      --light-tan: #ede7dd;
+      --gold: #c9962a;
+      --white: #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      overflow-x: hidden;
+    }
+
+    /* HERO */
+    .hero {
+      background: var(--dark);
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 70% 30%, rgba(200,52,26,0.22) 0%, transparent 55%),
+        radial-gradient(ellipse at 20% 70%, rgba(201,150,42,0.10) 0%, transparent 50%);
+    }
+    .hero-texture {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.015'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-eyebrow {
+      position: absolute;
+      top: 44px;
+      left: 56px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .hero-eyebrow .pip {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--tomato);
+      animation: blink 2.4s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .hero-eyebrow span {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 56px 68px;
+      max-width: 860px;
+      animation: riseUp 0.9s ease both;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--tomato);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      margin-bottom: 24px;
+    }
+    .badge svg { width: 13px; height: 13px; fill: #fff; }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 6vw, 4.8rem);
+      font-weight: 700;
+      line-height: 1.05;
+      color: #fff;
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+    }
+    .hero h1 em { color: var(--gold); font-style: italic; }
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .author-chip {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .author-dot {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--tomato);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.15);
+    }
+    .author-text { display: flex; flex-direction: column; }
+    .author-text strong { font-size: 13px; font-weight: 600; color: #fff; }
+    .author-text span { font-size: 11.5px; color: var(--gold); letter-spacing: 0.04em; }
+    .sep { width: 1px; height: 32px; background: rgba(255,255,255,0.15); }
+    .meta-pill {
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.38);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .loc-pill {
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.38);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-left: 2px solid var(--tomato);
+      padding-left: 12px;
+    }
+
+    /* STRIPE */
+    .stripe {
+      height: 5px;
+      background: linear-gradient(90deg, var(--tomato) 0%, var(--tomato-dark) 55%, var(--dark) 100%);
+    }
+
+    /* LAYOUT */
+    .page-wrap { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 310px;
+      gap: 60px;
+      padding: 80px 0 100px;
+    }
+
+    /* ARTICLE */
+    .article-body { animation: riseUp 1s 0.12s ease both; }
+    .article-body p {
+      font-size: 17px;
+      line-height: 1.84;
+      color: #2e2a26;
+      margin-bottom: 28px;
+      font-weight: 300;
+    }
+    .article-body p:first-of-type::first-letter {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5.4rem;
+      font-weight: 700;
+      line-height: 0.72;
+      float: left;
+      margin: 0 12px 0 0;
+      color: var(--tomato);
+      padding-top: 10px;
+    }
+
+    .pull-quote {
+      border-left: 4px solid var(--tomato);
+      margin: 44px 0;
+      padding: 22px 32px;
+      background: var(--white);
+      box-shadow: 0 4px 28px rgba(0,0,0,0.05);
+      position: relative;
+    }
+    .pull-quote::before {
+      content: '\201C';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 6rem;
+      color: var(--tomato);
+      opacity: 0.12;
+      position: absolute;
+      top: -14px;
+      left: 20px;
+      line-height: 1;
+    }
+    .pull-quote p {
+      font-family: 'Cormorant Garamond', serif !important;
+      font-size: 1.45rem !important;
+      font-style: italic;
+      line-height: 1.5 !important;
+      color: var(--dark) !important;
+      margin: 0 !important;
+      font-weight: 600 !important;
+    }
+    .pull-quote p::first-letter { all: unset !important; }
+
+    /* MENU HIGHLIGHT BOX */
+    .menu-box {
+      background: var(--dark);
+      padding: 36px 40px;
+      margin: 44px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .menu-box::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--tomato);
+    }
+    .menu-box::after {
+      content: '🍕';
+      position: absolute;
+      right: 24px;
+      bottom: 12px;
+      font-size: 80px;
+      opacity: 0.06;
+      pointer-events: none;
+    }
+    .menu-box h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 18px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .menu-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 28px;
+    }
+    .menu-item {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.5;
+    }
+    .menu-item::before {
+      content: '—';
+      color: var(--tomato);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    /* YOUTUBE THUMBNAILS */
+    .yt-section {
+      margin: 44px 0;
+    }
+    .yt-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--tan);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .yt-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--light-tan);
+    }
+    .yt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .yt-thumb {
+      display: block;
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .yt-thumb:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.18);
+    }
+    .yt-thumb img {
+      width: 100%;
+      aspect-ratio: 9/16;
+      object-fit: cover;
+      display: block;
+    }
+    .yt-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 14px;
+    }
+    .yt-play {
+      width: 44px; height: 44px;
+      background: rgba(255,0,0,0.88);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      margin-top: auto;
+      margin-bottom: auto;
+      flex-shrink: 0;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .yt-thumb:hover .yt-play {
+      background: #ff0000;
+      transform: scale(1.1);
+    }
+    .yt-play svg { width: 18px; height: 18px; fill: #fff; margin-left: 3px; }
+    .yt-caption {
+      font-size: 12.5px;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.4;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+    }
+    .yt-shorts-tag {
+      display: inline-block;
+      background: #ff0000;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 3px 7px;
+      border-radius: 2px;
+      margin-bottom: 6px;
+    }
+
+    /* SPECS BOX */
+    .specs-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--light-tan);
+      margin: 44px 0;
+      border: 1px solid var(--light-tan);
+    }
+    .spec-cell {
+      background: var(--white);
+      padding: 22px 20px;
+      text-align: center;
+    }
+    .spec-icon { font-size: 24px; margin-bottom: 8px; }
+    .spec-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--tan);
+      margin-bottom: 4px;
+    }
+    .spec-value {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--dark);
+      line-height: 1.4;
+    }
+
+    /* SIDEBAR */
+    .sidebar { display: flex; flex-direction: column; gap: 28px; animation: riseUp 1s 0.22s ease both; }
+    .s-card { background: var(--white); border: 1px solid var(--light-tan); overflow: hidden; }
+    .s-card-head {
+      background: var(--dark);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .s-card-head .bar { width: 3px; height: 16px; background: var(--tomato); }
+    .s-card-head span {
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+    }
+    .s-card-body { padding: 22px 20px; }
+
+    /* ORDER CTA */
+    .order-cta {
+      background: var(--tomato);
+      padding: 30px 22px;
+      text-align: center;
+    }
+    .order-cta h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+    .order-cta p { font-size: 13px; color: rgba(255,255,255,0.72); margin-bottom: 20px; line-height: 1.6; }
+    .order-btn {
+      display: block;
+      background: #fff;
+      color: var(--tomato);
+      font-weight: 600;
+      font-size: 12.5px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 13px 18px;
+      margin-bottom: 10px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .order-btn:hover { background: var(--dark); color: #fff; }
+    .order-phone {
+      display: block;
+      color: rgba(255,255,255,0.65);
+      font-size: 13px;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      margin-top: 4px;
+    }
+
+    /* HOURS */
+    .hours-list { display: flex; flex-direction: column; gap: 8px; }
+    .hour-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--light-tan);
+    }
+    .hour-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .hour-row .day { font-weight: 500; color: var(--charcoal); }
+    .hour-row .time { color: var(--tan); font-size: 12.5px; }
+    .hour-row.closed .time { color: var(--tomato); font-weight: 500; }
+
+    /* AUTHOR */
+    .author-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+    }
+    .author-av {
+      width: 68px; height: 68px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--dark) 0%, var(--tomato) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .author-block h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 700; color: var(--dark); }
+    .author-block .h { font-size: 12px; color: var(--tomato); font-weight: 500; letter-spacing: 0.05em; }
+    .author-block .b { font-size: 12.5px; line-height: 1.65; color: var(--tan); }
+
+    /* TAGS */
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--charcoal);
+      background: var(--light-tan);
+      padding: 5px 11px;
+      text-transform: uppercase;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--dark);
+      padding: 72px 40px;
+      text-align: center;
+    }
+    .footer-inner { max-width: 640px; margin: 0 auto; }
+    .footer h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      line-height: 1.15;
+    }
+    .footer h2 em { color: var(--gold); font-style: italic; }
+    .footer .sub { font-size: 15px; color: rgba(255,255,255,0.45); margin-bottom: 30px; }
+    .footer-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .f-btn {
+      display: inline-block;
+      padding: 13px 26px;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .f-btn.primary { background: var(--tomato); color: #fff; }
+    .f-btn.primary:hover { background: var(--tomato-dark); }
+    .f-btn.sec { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.65); border: 1px solid rgba(255,255,255,0.1); }
+    .f-btn.sec:hover { background: rgba(255,255,255,0.13); }
+    .footer-note { margin-top: 36px; font-size: 11.5px; color: rgba(255,255,255,0.2); letter-spacing: 0.04em; }
+    .footer-note a { color: inherit; text-decoration: none; }
+
+    /* ANIMATION */
+    @keyframes riseUp {
+      from { opacity: 0; transform: translateY(22px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 860px) {
+      .hero-content { padding: 0 28px 52px; }
+      .hero-eyebrow { left: 28px; top: 30px; }
+      .page-wrap { padding: 0 22px; }
+      .content-grid { grid-template-columns: 1fr; gap: 44px; padding: 52px 0 72px; }
+      .yt-grid { grid-template-columns: 1fr 1fr; }
+      .menu-items { grid-template-columns: 1fr; }
+      .specs-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .yt-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-texture"></div>
+  <div class="hero-eyebrow">
+    <div class="pip"></div>
+    <span>Local Eats &middot; Pearl River, NY &middot; Rockland County</span>
+  </div>
+  <div class="hero-content">
+    <div class="badge">
+      <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      5 N Main St, Pearl River NY
+    </div>
+    <h1>The Best Pizza in<br>Rockland County is<br><em>Right Here on Main Street</em></h1>
+    <div class="hero-meta">
+      <div class="author-chip">
+        <div class="author-dot">P</div>
+        <div class="author-text">
+          <strong>Peter</strong>
+          <span>@siscamoves</span>
+        </div>
+      </div>
+      <div class="sep"></div>
+      <span class="meta-pill">April 28, 2026</span>
+      <span class="loc-pill">Pearl River &middot; Nanuet &middot; Orangetown</span>
+    </div>
+  </div>
+</header>
+<div class="stripe"></div>
+
+<!-- BODY -->
+<div class="page-wrap">
+  <div class="content-grid">
+
+    <article class="article-body">
+
+      <p>I cover real estate all across Rockland County, Bergen County, and the greater Tri-State area, which means I'm out in these communities every single day. I know every block of Pearl River, and I'm telling you straight up &mdash; Pan and Peel Pizza on Main Street is the best pizza in Rockland County. I don't say that lightly. I've been going since they opened and every single time, it hits. This is a spot I bring clients, bring my family, and go back to on a regular Friday just because nothing else compares.</p>
+
+      <div class="pull-quote">
+        <p>This isn't your average NY slice. Pan and Peel is doing something genuinely special &mdash; and Pearl River is lucky to have them.</p>
+      </div>
+
+      <p>What makes Pan and Peel different starts before the pizza even goes in the oven. The dough is hand-mixed using unbleached, unbromated flour and fermented for days &mdash; not hours. That process gives you a crust that's simultaneously light, crispy, and airy with real structure underneath. The sauce is made from whole peeled Italian tomatoes. The mozzarella is made fresh in-house every single day. This is the stuff that separates a serious pizza spot from everyone else in the area.</p>
+
+      <div class="specs-row">
+        <div class="spec-cell">
+          <div class="spec-icon">🌾</div>
+          <div class="spec-label">The Dough</div>
+          <div class="spec-value">Unbleached flour, hand-mixed, fermented for days</div>
+        </div>
+        <div class="spec-cell">
+          <div class="spec-icon">🍅</div>
+          <div class="spec-label">The Sauce</div>
+          <div class="spec-value">Whole peeled Italian tomatoes, nothing fake</div>
+        </div>
+        <div class="spec-cell">
+          <div class="spec-icon">🧀</div>
+          <div class="spec-label">The Cheese</div>
+          <div class="spec-value">Fresh mozzarella made in-house daily</div>
+        </div>
+      </div>
+
+      <p>The menu is dialed in and doesn't waste your time. You've got the Margherita which is a must-order for any first timer &mdash; just tomato sauce, fresh mozzarella, basil, Parmigiano Reggiano, burrata and EVOO, and it's perfect. The Pepperoni Hot Honey is dangerous in the best way. The Vodka Roni is rich and satisfying. Beyond pizza, their starters are all house-made: mozzarella sticks, garlic knots fried then drizzled in olive oil and garlic, wings fried in beef tallow. Everything is intentional. The Chicken Burrata Parm is a whole separate reason to go.</p>
+
+      <div class="menu-box">
+        <h3>Must-Order Items</h3>
+        <div class="menu-items">
+          <div class="menu-item">Margherita Special</div>
+          <div class="menu-item">Pepperoni Hot Honey</div>
+          <div class="menu-item">Vodka Roni</div>
+          <div class="menu-item">Burrata Pizza</div>
+          <div class="menu-item">Chicken Burrata Parm</div>
+          <div class="menu-item">Fresh Mozzarella Sticks</div>
+          <div class="menu-item">Garlic Knots (fried)</div>
+          <div class="menu-item">Wings in Beef Tallow</div>
+          <div class="menu-item">Brown Butter Choc Chip Cookies</div>
+          <div class="menu-item">Warm Ice Cream Sandwich</div>
+        </div>
+      </div>
+
+      <p>They also supply the food over at Gentle Giant Brewery, which tells you everything you need to know about where they sit in this community. Pearl River has always been a tight-knit Main Street town and Pan and Peel fits right into that fabric. They're not some chain or a franchise &mdash; this is a real neighborhood spot run by people who care about the product they're putting out. That's exactly the kind of place I want to support and shout out to everyone in Rockland, Bergen, and the surrounding area.</p>
+
+      <!-- YOUTUBE THUMBNAILS -->
+      <div class="yt-section">
+        <div class="yt-label">Watch on @siscamoves YouTube</div>
+        <div class="yt-grid">
+          <a class="yt-thumb" href="https://www.youtube.com/shorts/Hfw-PrKMcbQ" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/Hfw-PrKMcbQ/maxresdefault.jpg" alt="Friday in Pearl River means stopping by Pan and Peel Pizza" loading="lazy" />
+            <div class="yt-overlay">
+              <div></div>
+              <div class="yt-play">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div>
+                <div class="yt-shorts-tag">&#9654; Shorts</div>
+                <div class="yt-caption">Friday in Pearl River means stopping by Pan &amp; Peel Pizza &#127829;</div>
+              </div>
+            </div>
+          </a>
+          <a class="yt-thumb" href="https://www.youtube.com/shorts/XOb4vYKSO6E" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/XOb4vYKSO6E/maxresdefault.jpg" alt="Best Pizza in Rockland? This Slice Hits Different" loading="lazy" />
+            <div class="yt-overlay">
+              <div></div>
+              <div class="yt-play">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div>
+                <div class="yt-shorts-tag">&#9654; Shorts</div>
+                <div class="yt-caption">Best Pizza in Rockland? This Slice Hits Different &#127829;</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <p>If you're new to the area, relocating, or you've just never made it over to Main Street in Pearl River &mdash; make Pan and Peel your first stop. They're open Tuesday through Sunday starting at noon, and Friday and Saturday they run until 11PM. Delivery available through DoorDash and Uber Eats. Or just walk in and order at the counter the way it's supposed to be done. Tell them @siscamoves sent you.</p>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="order-cta">
+        <h3>Order Online or Stop In</h3>
+        <p>5 N Main Street, Pearl River, NY &mdash; pickup, delivery, and dine-in available.</p>
+        <a class="order-btn" href="https://panandpeel.com" target="_blank" rel="noopener">Order Online &rarr;</a>
+        <a class="order-phone" href="tel:8458250451">&#9990; (845) 825-0451</a>
+      </div>
+
+      <!-- Hours -->
+      <div class="s-card">
+        <div class="s-card-head">
+          <div class="bar"></div>
+          <span>Hours</span>
+        </div>
+        <div class="s-card-body">
+          <div class="hours-list">
+            <div class="hour-row"><span class="day">Monday</span><span class="time">12:00 PM &ndash; 9:00 PM</span></div>
+            <div class="hour-row closed"><span class="day">Tuesday</span><span class="time">Closed</span></div>
+            <div class="hour-row"><span class="day">Wednesday</span><span class="time">12:00 PM &ndash; 10:00 PM</span></div>
+            <div class="hour-row"><span class="day">Thursday</span><span class="time">12:00 PM &ndash; 10:00 PM</span></div>
+            <div class="hour-row"><span class="day">Friday</span><span class="time">12:00 PM &ndash; 11:00 PM</span></div>
+            <div class="hour-row"><span class="day">Saturday</span><span class="time">12:00 PM &ndash; 11:00 PM</span></div>
+            <div class="hour-row"><span class="day">Sunday</span><span class="time">12:00 PM &ndash; 9:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Author -->
+      <div class="s-card">
+        <div class="s-card-head">
+          <div class="bar"></div>
+          <span>About the Author</span>
+        </div>
+        <div class="s-card-body">
+          <div class="author-block">
+            <div class="author-av">P</div>
+            <div>
+              <h4>Peter</h4>
+              <div class="h">@siscamoves</div>
+            </div>
+            <p class="b">Real estate agent covering Rockland County, Bergen County, Westchester, and Staten Island. In these communities every day &mdash; eating well along the way.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area Tags -->
+      <div class="s-card">
+        <div class="s-card-head">
+          <div class="bar"></div>
+          <span>Delivery Areas</span>
+        </div>
+        <div class="s-card-body">
+          <div class="tag-cloud">
+            <span class="tag">Pearl River</span>
+            <span class="tag">Nanuet</span>
+            <span class="tag">Park Ridge</span>
+            <span class="tag">Orangetown</span>
+            <span class="tag">West Nyack</span>
+            <span class="tag">Montvale</span>
+            <span class="tag">Chestnut Ridge</span>
+            <span class="tag">Tappan</span>
+            <span class="tag">Blauvelt</span>
+            <span class="tag">Spring Valley</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Find them -->
+      <div class="s-card">
+        <div class="s-card-head">
+          <div class="bar"></div>
+          <span>Find Them</span>
+        </div>
+        <div class="s-card-body" style="display:flex;flex-direction:column;gap:10px;">
+          <p style="font-size:13.5px;color:var(--charcoal);line-height:1.6;margin:0;">5 N Main Street<br>Pearl River, NY 10965</p>
+          <a href="tel:8458250451" style="font-size:13.5px;color:var(--tomato);font-weight:600;text-decoration:none;">(845) 825-0451</a>
+          <a href="https://panandpeel.com" target="_blank" rel="noopener" style="font-size:13px;color:var(--tan);text-decoration:none;letter-spacing:0.03em;">panandpeel.com &#8599;</a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <h2>Pearl River's Best Kept Secret<br><em>Isn't a Secret Anymore</em></h2>
+    <p class="sub">Pan and Peel Pizza &mdash; 5 N Main Street, Pearl River, NY. Open 7 days (closed Tuesdays). Pickup, delivery &amp; dine-in.</p>
+    <div class="footer-btns">
+      <a href="https://panandpeel.com" target="_blank" rel="noopener" class="f-btn primary">Order Online</a>
+      <a href="https://www.youtube.com/shorts/Hfw-PrKMcbQ" target="_blank" rel="noopener" class="f-btn sec">Watch on YouTube</a>
+      <a href="https://www.youtube.com/shorts/XOb4vYKSO6E" target="_blank" rel="noopener" class="f-btn sec">Watch on YouTube</a>
+    </div>
+    <p class="footer-note">Blog by @siscamoves &middot; <a href="https://panandpeel.com" target="_blank" rel="noopener">panandpeel.com</a> &middot; Pearl River, NY</p>
+  </div>
+</footer>
+
+</body>
+</html>
