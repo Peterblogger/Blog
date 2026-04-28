@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$385,000 Condo at Dwight Manor | 100 E Palisade Ave Unit D12, Englewood NJ | @siscamoves</title>
+<meta name="description" content="For sale at $385,000 — Unit D12 at Dwight Manor, 100 E Palisade Ave, Englewood NJ. Historic 1927 Tudor building on East Hill, Bergen County. Minutes to Manhattan. Contact @siscamoves.">
+<meta property="og:title" content="$385,000 | Dwight Manor Unit D12, Englewood NJ | @siscamoves">
+<meta property="og:description" content="Pre-war Tudor condo on Englewood's East Hill. Historic character, NYC bus at the door, Bergen County's most desirable address.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&display=swap');
+
+  :root {
+    --burgundy: #4a1528;
+    --burgundy-deep: #2e0d18;
+    --brass: #9e7e3a;
+    --brass-light: #c4a35a;
+    --cream: #f5f0e8;
+    --warm-white: #faf8f4;
+    --charcoal: #2a2a2a;
+    --muted: #7a7065;
+    --border: #e2d9cc;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.6;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* ── PHOTO HEADER ── */
+  .photo-header {
+    width: 100%;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    background: var(--burgundy-deep);
+  }
+  .photo-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
+  .photo-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(46,13,24,0.2) 0%, rgba(46,13,24,0.75) 100%);
+  }
+  .photo-badge {
+    position: absolute;
+    top: 24px; left: 24px;
+    background: var(--brass);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 7px 16px;
+    border-radius: 2px;
+  }
+  .photo-price {
+    position: absolute;
+    top: 24px; right: 24px;
+    background: var(--burgundy);
+    border: 1px solid var(--brass);
+    color: var(--brass-light);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 4px;
+  }
+  .photo-caption {
+    position: absolute;
+    bottom: 24px; left: 24px; right: 24px;
+  }
+  .photo-building {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.05;
+    margin-bottom: 8px;
+  }
+  .photo-address {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.5px;
+  }
+
+  /* ── PHOTO STRIP ── */
+  .photo-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+    gap: 3px;
+    background: var(--burgundy-deep);
+  }
+  .photo-strip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    display: block;
+  }
+
+  /* ── SPECS BAR ── */
+  .specs {
+    display: flex;
+    background: var(--burgundy);
+    border-top: 3px solid var(--brass);
+  }
+  .spec {
+    flex: 1;
+    padding: 20px 10px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.12);
+  }
+  .spec:last-child { border-right: none; }
+  .spec-n {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--brass-light);
+    line-height: 1;
+  }
+  .spec-l {
+    font-size: 9px;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+  }
+
+  /* ── BODY ── */
+  .body {
+    background: var(--warm-white);
+    padding: 52px 48px;
+  }
+
+  .byline-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+  .byline-av {
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .byline-name { font-size: 13px; font-weight: 700; color: var(--burgundy); }
+  .byline-meta { font-size: 11px; color: var(--muted); margin-top: 1px; }
+
+  .lead {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.18rem;
+    font-style: italic;
+    line-height: 1.75;
+    color: var(--charcoal);
+    border-left: 3px solid var(--brass);
+    padding-left: 20px;
+    margin-bottom: 36px;
+  }
+
+  .section-label {
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 12px;
+    margin-top: 36px;
+  }
+
+  p.body-text {
+    font-size: 15px;
+    line-height: 1.85;
+    color: #3d3530;
+    margin-bottom: 16px;
+    font-weight: 300;
+  }
+
+  /* ── FEATURE GRID ── */
+  .feat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  .feat {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-left: 3px solid var(--brass);
+  }
+  .feat-ico { font-size: 19px; flex-shrink: 0; }
+  .feat-lbl {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--muted);
+    margin-bottom: 2px;
+  }
+  .feat-val { font-size: 13px; font-weight: 700; color: var(--burgundy); }
+
+  /* ── YOUTUBE FULL EMBED ── */
+  .yt-embed-wrap {
+    margin: 28px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ff0000;
+  }
+  .yt-embed-header {
+    background: #ff0000;
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .yt-pill {
+    background: #fff;
+    color: #ff0000;
+    font-size: 9px;
+    font-weight: 900;
+    padding: 3px 9px;
+    border-radius: 2px;
+  }
+  .yt-header-txt { font-size: 12px; color: #fff; font-weight: 600; }
+  .yt-iframe-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    background: #000;
+  }
+  .yt-iframe-wrap iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+  }
+
+  /* ── YOUTUBE SHORT LINK ── */
+  .yt-short {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 28px 0;
+    border: 2px solid #ff0000;
+    display: block;
+    text-decoration: none;
+  }
+  .yt-short-header {
+    background: #cc0000;
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .yt-short-body {
+    background: #0f0f0f;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 0 28px;
+  }
+  .play-btn {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.3);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .play-tri {
+    width: 0; height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid #fff;
+    margin-left: 4px;
+  }
+  .yt-short-title { font-size: 14px; color: #fff; font-weight: 700; margin-bottom: 4px; }
+  .yt-short-sub { font-size: 11px; color: rgba(255,255,255,0.4); }
+
+  /* ── INSTAGRAM ── */
+  .ig-wrap {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 28px 0;
+    border: 2px solid #e1306c;
+    display: block;
+    text-decoration: none;
+  }
+  .ig-header {
+    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .ig-pill {
+    background: #fff;
+    color: #833ab4;
+    font-size: 9px;
+    font-weight: 900;
+    padding: 3px 9px;
+    border-radius: 2px;
+  }
+  .ig-header-txt { font-size: 12px; color: #fff; font-weight: 600; }
+  .ig-body {
+    background: #fafafa;
+    padding: 18px 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .ig-av {
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #e1306c;
+  }
+  .ig-handle { font-size: 13px; font-weight: 800; color: var(--burgundy); margin-bottom: 4px; }
+  .ig-caption { font-size: 12.5px; color: #444; line-height: 1.5; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+  }
+  .ornament {
+    text-align: center;
+    color: var(--brass);
+    font-size: 18px;
+    margin: -12px 0;
+    background: var(--warm-white);
+    width: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -10px;
+  }
+
+  /* ── AUTHOR ── */
+  .author {
+    background: var(--cream);
+    border-radius: 10px;
+    padding: 22px 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin: 28px 0;
+    border: 1px solid var(--border);
+  }
+  .author-av {
+    width: 54px; height: 54px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--burgundy), var(--brass));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; flex-shrink: 0;
+    border: 2px solid var(--brass);
+  }
+  .author-name { font-size: 15px; font-weight: 700; color: var(--burgundy); margin-bottom: 2px; }
+  .author-role { font-size: 10px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--brass); font-weight: 700; margin-bottom: 7px; }
+  .author-bio { font-size: 13px; color: #555; line-height: 1.55; margin-bottom: 6px; font-weight: 300; }
+  .author-ig {
+    font-size: 12.5px;
+    color: #833ab4;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .author-ig:hover { text-decoration: underline; }
+
+  /* ── CTA ── */
+  .cta {
+    background: var(--burgundy-deep);
+    padding: 36px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    border-top: 3px solid var(--brass);
+  }
+  .cta-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  .cta-sub { font-size: 12px; color: rgba(255,255,255,0.38); }
+  .cta-btn {
+    background: var(--brass);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 4px;
+    white-space: nowrap;
+    text-align: center;
+    display: inline-block;
+    letter-spacing: 0.5px;
+  }
+  .cta-btn-sub { font-size: 10px; opacity: 0.65; margin-top: 3px; font-weight: 400; }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: #1a0810;
+    padding: 18px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer-slug { font-family: 'Courier New', monospace; font-size: 10px; color: rgba(255,255,255,0.2); }
+  .footer-brand { font-size: 12px; color: var(--brass); font-weight: 800; letter-spacing: 2px; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .photo-header { height: 280px; }
+    .photo-strip { height: 140px; }
+    .body { padding: 32px 22px; }
+    .feat-grid { grid-template-columns: 1fr; }
+    .specs { flex-wrap: wrap; }
+    .spec { min-width: 33%; }
+    .cta { padding: 28px 22px; flex-direction: column; align-items: flex-start; }
+    .footer { padding: 16px 22px; }
+    .photo-price { font-size: 1.1rem; padding: 8px 14px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- PHOTO HERO -->
+  <div class="photo-header">
+    <img src="dwight-manor-englewood-nj-unit-d12.jpg" alt="Dwight Manor aerial view, Englewood NJ">
+    <div class="photo-overlay"></div>
+    <div class="photo-badge">For Sale · Bergen County, NJ</div>
+    <div class="photo-price">$385,000</div>
+    <div class="photo-caption">
+      <div class="photo-building">Dwight Manor<br>Unit D12</div>
+      <div class="photo-address">100 E Palisade Ave, Englewood, NJ 07631 &nbsp;·&nbsp; East Hill</div>
+    </div>
+  </div>
+
+  <!-- PHOTO STRIP -->
+  <div class="photo-strip">
+    <img src="dwight-manor-englewood-nj-unit-d12-2.jpg" alt="Dwight Manor aerial overhead">
+    <img src="dwight-manor-englewood-nj-unit-d12-3.jpg" alt="Dwight Manor entrance gate">
+  </div>
+
+  <!-- SPECS -->
+  <div class="specs">
+    <div class="spec"><div class="spec-n">1927</div><div class="spec-l">Built</div></div>
+    <div class="spec"><div class="spec-n">Tudor</div><div class="spec-l">Architecture</div></div>
+    <div class="spec"><div class="spec-n">NYC</div><div class="spec-l">Bus at Door</div></div>
+    <div class="spec"><div class="spec-n">East</div><div class="spec-l">Hill Location</div></div>
+    <div class="spec"><div class="spec-n">D12</div><div class="spec-l">Unit</div></div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+
+    <div class="byline-row">
+      <div class="byline-av">🏠</div>
+      <div>
+        <div class="byline-name">Peter Sisca · @siscamoves</div>
+        <div class="byline-meta">April 2026 &nbsp;·&nbsp; Bergen County, NJ</div>
+      </div>
+    </div>
+
+    <p class="lead">They don't build them like this anymore. Dwight Manor has stood on Englewood's East Hill since 1927 — a landmark Tudor building with the kind of character, craftsmanship, and address that no new construction can replicate. Unit D12 is your chance to own a piece of it.</p>
+
+    <div class="section-label">The Building</div>
+    <p class="body-text">Dwight Manor is one of Englewood's most recognizable and beloved addresses — a grand pre-war Tudor complex set among mature trees on the highly desirable East Hill. The building features a private gated entrance, on-site fitness center, assigned parking, and laundry facilities. Heat and hot water are included. This is not a cookie-cutter condo complex — it's a landmark.</p>
+
+    <div class="feat-grid">
+      <div class="feat"><div class="feat-ico">🏰</div><div><div class="feat-lbl">Style</div><div class="feat-val">Pre-War Tudor</div></div></div>
+      <div class="feat"><div class="feat-ico">🚌</div><div><div class="feat-lbl">NYC Transit</div><div class="feat-val">Bus at the Door</div></div></div>
+      <div class="feat"><div class="feat-ico">🅿️</div><div><div class="feat-lbl">Parking</div><div class="feat-val">Assigned Included</div></div></div>
+      <div class="feat"><div class="feat-ico">🏋️</div><div><div class="feat-lbl">Amenities</div><div class="feat-val">On-Site Gym</div></div></div>
+      <div class="feat"><div class="feat-ico">🌡️</div><div><div class="feat-lbl">Utilities</div><div class="feat-val">Heat & Hot Water Incl.</div></div></div>
+      <div class="feat"><div class="feat-ico">📍</div><div><div class="feat-lbl">Location</div><div class="feat-val">Englewood East Hill</div></div></div>
+    </div>
+
+    <div class="section-label">The Location</div>
+    <p class="body-text">East Hill is Englewood's most sought-after pocket — tree-lined streets, walkable to vibrant downtown dining, boutiques, and cafes, and just steps from NJ Transit bus routes with direct service to the Port Authority in Midtown Manhattan. You're 20 miles from the city with a suburb's peace and a city-dweller's convenience.</p>
+    <p class="body-text">For buyers priced out of Manhattan or looking to maximize their dollar without sacrificing access, Dwight Manor at this price point is the kind of opportunity that doesn't come around often in Bergen County.</p>
+
+    <!-- YOUTUBE FULL TOUR EMBED -->
+    <div class="section-label">Watch the Full Video Tour</div>
+    <a class="yt-embed-wrap" href="https://www.youtube.com/watch?v=arV-MAaDiOk" target="_blank" rel="noopener" style="display:block; text-decoration:none;">
+      <div class="yt-embed-header">
+        <div class="yt-pill">▶ YouTube</div>
+        <div class="yt-header-txt">Full Property Tour · @siscamoves</div>
+      </div>
+      <div style="position:relative; width:100%; padding-bottom:56.25%; background:#000; overflow:hidden;">
+        <img src="https://img.youtube.com/vi/arV-MAaDiOk/hqdefault.jpg" alt="Full Video Tour Thumbnail" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; opacity:0.75; display:block;">
+        <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;">
+          <div class="play-btn" style="width:68px; height:68px;"><div class="play-tri" style="border-left-width:22px; border-top-width:12px; border-bottom-width:12px;"></div></div>
+          <div style="text-align:center; padding:0 20px;">
+            <div style="font-size:15px; color:#fff; font-weight:700; margin-bottom:4px;">Dwight Manor Unit D12 — Full Walkthrough</div>
+            <div style="font-size:12px; color:rgba(255,255,255,0.5);">Tap to watch on YouTube</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- YOUTUBE SHORT -->
+    <div class="section-label">Quick Look — YouTube Short</div>
+    <a class="yt-short" href="https://www.youtube.com/shorts/kws_Nc8hoHE" target="_blank" rel="noopener">
+      <div class="yt-short-header">
+        <div class="yt-pill">▶ YouTube</div>
+        <div class="yt-header-txt">$385,000 Condo in Englewood NJ — Minutes to Manhattan</div>
+      </div>
+      <div style="position:relative; height:200px; overflow:hidden; background:#000;">
+        <img src="https://img.youtube.com/vi/kws_Nc8hoHE/hqdefault.jpg" alt="YouTube Short Thumbnail" style="width:100%; height:100%; object-fit:cover; opacity:0.72; display:block;">
+        <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;">
+          <div class="play-btn" style="width:62px; height:62px;"><div class="play-tri"></div></div>
+          <div style="text-align:center; padding:0 20px;">
+            <div class="yt-short-title">$385,000 Condo in Englewood, NJ | Minutes to Manhattan</div>
+            <div class="yt-short-sub">Tap to watch on YouTube</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <div class="section-label">See It on Instagram</div>
+    <a class="ig-wrap" href="https://www.instagram.com/reel/DSngY5CkT3n/" target="_blank" rel="noopener">
+      <div class="ig-header">
+        <div class="ig-pill">📷 Instagram</div>
+        <div class="ig-header-txt">Reel · @siscamoves</div>
+      </div>
+      <div class="ig-body">
+        <div class="ig-av">🏰</div>
+        <div>
+          <div class="ig-handle">@siscamoves</div>
+          <div class="ig-caption">Step inside Unit D12 at Dwight Manor — a landmark 1927 Tudor building on Englewood's East Hill. $385K, minutes to Manhattan. Watch the reel. Link in bio.</div>
+        </div>
+      </div>
+    </a>
+
+    <div class="section-label">Why This Price Point Matters</div>
+    <p class="body-text">Bergen County condo inventory is tight. When a building with this kind of architectural pedigree, this location, and this commute access hits the market under $400K — buyers pay attention. Whether you're a first-time buyer, a downsizer, or an investor looking for a rental-ready unit in one of NJ's most walkable urban neighborhoods, Unit D12 checks every box.</p>
+
+    <div class="divider"></div>
+    <div class="ornament">❧</div>
+
+    <!-- AUTHOR BIO -->
+    <div class="author">
+      <div class="author-av" style="background:none; border:2px solid var(--brass); overflow:hidden; padding:0;"><img src="profile-icon.png" alt="Peter Sisca" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+      <div>
+        <div class="author-name">Peter Sisca</div>
+        <div class="author-role">Licensed Real Estate Agent · @siscamoves</div>
+        <div class="author-bio">Covering Rockland County, Bergen County, Westchester & Staten Island. Helping buyers and sellers move smarter across the Tri-State area.</div>
+        <a class="author-ig" href="https://www.instagram.com/peter_a_sisca" target="_blank" rel="noopener">📷 instagram.com/peter_a_sisca</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div>
+      <div class="cta-title">Interested in Dwight Manor Unit D12?</div>
+      <div class="cta-sub">DM me or reach out to schedule a showing.</div>
+    </div>
+    <a class="cta-btn" href="https://www.instagram.com/peter_a_sisca" target="_blank" rel="noopener">
+      @siscamoves
+      <div class="cta-btn-sub">siscamoves.com</div>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-slug">dwight-manor-englewood-nj-unit-d12-listing</div>
+    <div class="footer-brand">SISCAMOVES</div>
+  </div>
+
+</body>
+</html>
