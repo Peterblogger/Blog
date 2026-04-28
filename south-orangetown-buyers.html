@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>First-Time Homebuyers in South Orangetown NY | @siscamoves</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#06080F;color:#E2E8F0;font-family:'Inter',sans-serif;min-height:100vh;}
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(160deg,#0D1130 0%,#06080F 65%);
+    padding:52px 24px 44px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid #1E2A6E;
+  }
+  .hero::before{
+    content:'';position:absolute;top:-80px;right:-60px;
+    width:280px;height:280px;border-radius:50%;
+    background:radial-gradient(circle,#4F46E5 0%,transparent 70%);
+    opacity:0.2;
+  }
+  .hero::after{
+    content:'';position:absolute;bottom:-80px;left:-60px;
+    width:220px;height:220px;border-radius:50%;
+    background:radial-gradient(circle,#4338CA 0%,transparent 70%);
+    opacity:0.15;
+  }
+
+  .badge{
+    display:inline-block;
+    border:1px solid #6366F1;
+    color:#A5B4FC;
+    font-size:10px;
+    letter-spacing:2.5px;
+    padding:5px 16px;
+    border-radius:20px;
+    margin-bottom:20px;
+    background:rgba(99,102,241,0.1);
+  }
+
+  .hero-icon{font-size:52px;margin-bottom:16px;position:relative;z-index:1;line-height:1;}
+
+  h1{
+    font-family:'Playfair Display',serif;
+    font-size:30px;font-weight:900;
+    color:#FFFFFF;line-height:1.2;
+    margin-bottom:10px;position:relative;z-index:1;
+  }
+  h1 span{color:#818CF8;}
+
+  .hero-sub{
+    font-size:14px;color:#6B7280;
+    line-height:1.6;margin-bottom:28px;
+    position:relative;z-index:1;
+  }
+  .hero-sub strong{color:#9CA3AF;}
+
+  /* STAT PILLS */
+  .stats{
+    display:flex;gap:10px;justify-content:center;
+    flex-wrap:wrap;margin-bottom:32px;
+    position:relative;z-index:1;
+  }
+  .stat-pill{
+    background:rgba(99,102,241,0.08);
+    border:1px solid #312E81;
+    border-radius:8px;padding:10px 16px;text-align:center;
+  }
+  .stat-num{
+    font-family:'Playfair Display',serif;
+    font-size:22px;font-weight:700;
+    color:#818CF8;line-height:1;margin-bottom:3px;
+  }
+  .stat-label{font-size:10px;color:#6B7280;letter-spacing:0.5px;text-transform:uppercase;}
+
+  /* CTA */
+  .cta-btn{
+    display:block;background:#4F46E5;color:#fff;
+    text-decoration:none;padding:18px 24px;
+    border-radius:12px;font-size:13px;letter-spacing:0.5px;
+    margin:0 auto;max-width:320px;
+    position:relative;z-index:1;transition:background 0.2s;
+  }
+  .cta-btn:active{background:#4338CA;}
+  .cta-label{font-size:11px;color:#C7D2FE;letter-spacing:1px;margin-bottom:4px;}
+  .cta-number{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;}
+
+  /* SECTION */
+  .section{padding:36px 24px;border-bottom:1px solid #0F1020;}
+  .section-tag{font-size:10px;letter-spacing:2.5px;color:#6366F1;margin-bottom:12px;text-transform:uppercase;}
+  .section h2{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:20px;line-height:1.3;}
+
+  /* LOAN CARDS */
+  .loan-cards{display:flex;flex-direction:column;gap:14px;}
+  .loan-card{
+    background:rgba(99,102,241,0.05);
+    border:1px solid #1E2550;
+    border-radius:10px;padding:18px;
+  }
+  .loan-card.featured{border-color:#4F46E5;}
+  .loan-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
+  .loan-name{font-size:15px;font-weight:700;color:#E2E8F0;}
+  .loan-tag{
+    font-size:10px;letter-spacing:1px;
+    padding:3px 10px;border-radius:20px;
+    background:rgba(99,102,241,0.2);color:#A5B4FC;
+  }
+  .loan-tag.pop{background:rgba(79,70,229,0.3);color:#C7D2FE;}
+  .loan-detail{font-size:13px;color:#6B7280;line-height:1.7;}
+  .loan-detail span{color:#A5B4FC;font-weight:600;}
+
+  /* STEPS */
+  .steps{display:flex;flex-direction:column;gap:0;}
+  .step{display:flex;align-items:flex-start;gap:16px;padding:16px 0;border-bottom:1px solid #0F1020;}
+  .step:last-child{border-bottom:none;}
+  .step-num{
+    min-width:36px;height:36px;border-radius:50%;
+    background:#1E1B4B;color:#818CF8;
+    display:flex;align-items:center;justify-content:center;
+    font-size:14px;font-weight:700;flex-shrink:0;
+    border:1px solid #312E81;
+  }
+  .step-text strong{display:block;font-size:14px;color:#E2E8F0;margin-bottom:3px;}
+  .step-text span{font-size:13px;color:#6B7280;line-height:1.6;}
+
+  /* PROGRAMS */
+  .programs{display:flex;flex-direction:column;gap:12px;}
+  .program{
+    border-left:3px solid #4F46E5;
+    padding:12px 16px;
+    background:rgba(99,102,241,0.05);
+    border-radius:0 8px 8px 0;
+  }
+  .program strong{display:block;font-size:14px;color:#C7D2FE;margin-bottom:4px;}
+  .program span{font-size:13px;color:#6B7280;line-height:1.6;}
+
+  /* BLOG */
+  .blog{padding:36px 24px;max-width:600px;margin:0 auto;}
+  .blog h2{font-family:'Playfair Display',serif;font-size:24px;color:#fff;line-height:1.3;margin-bottom:20px;}
+  .blog p{font-size:15px;color:#94A3B8;line-height:1.8;margin-bottom:18px;}
+  .blog p strong{color:#CBD5E1;}
+  .pull-quote{
+    border-left:3px solid #4F46E5;
+    padding:12px 16px;
+    background:rgba(99,102,241,0.05);
+    border-radius:0 8px 8px 0;
+    margin:24px 0;
+    font-family:'Playfair Display',serif;
+    font-size:17px;color:#C7D2FE;
+    line-height:1.5;font-style:italic;
+  }
+
+  /* BOTTOM CTA */
+  .bottom-cta{
+    background:#0D1130;
+    border-top:1px solid #1E2A6E;
+    padding:36px 24px;text-align:center;
+  }
+  .bottom-cta p{font-size:13px;color:#4B5563;margin-bottom:16px;}
+  .handle{font-size:12px;color:#1F2937;letter-spacing:1px;margin-top:20px;}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="badge">ROCKLAND COUNTY · BUYER GUIDE</div>
+  <div class="hero-icon">🏡</div>
+  <h1>First-Time Buyers<br>in South Orangetown, NY —<br><span>Here's Your Roadmap.</span></h1>
+  <p class="hero-sub">Strong schools, commuter access, established neighborhoods. <strong>South Orangetown is one of Rockland's best markets for first-time buyers.</strong> Let's break down exactly how to get in.</p>
+
+  <div class="stats">
+    <div class="stat-pill">
+      <div class="stat-num">3.5%</div>
+      <div class="stat-label">Min FHA Down</div>
+    </div>
+    <div class="stat-pill">
+      <div class="stat-num">3%</div>
+      <div class="stat-label">Min Conventional</div>
+    </div>
+    <div class="stat-pill">
+      <div class="stat-num">0%</div>
+      <div class="stat-label">VA / USDA Down</div>
+    </div>
+    <div class="stat-pill">
+      <div class="stat-num">$1,500</div>
+      <div class="stat-label">Closing Credits*</div>
+    </div>
+  </div>
+
+  <a class="cta-btn" href="sms:18455774606">
+    <div class="cta-label">TAP TO TEXT ME NOW</div>
+    <div class="cta-number">(845) 577-4606</div>
+  </a>
+</div>
+
+
+<!-- VIDEO -->
+<div class="section" style="text-align:center;">
+  <div class="section-tag">Watch First</div>
+  <h2 style="margin-bottom:16px;">See South Orangetown for Yourself</h2>
+  <p style="font-size:14px;color:#6B7280;margin-bottom:20px;">Your agent was on the ground. Here's a look at the area before you start your search.</p>
+  <a href="https://youtube.com/shorts/DTu_FsYm7H8" target="_blank" style="display:block;max-width:300px;margin:0 auto;text-decoration:none;">
+    <div style="position:relative;border-radius:14px;overflow:hidden;border:1px solid #1E2550;background:#0D1130;">
+      <!-- YouTube thumbnail -->
+      <img src="https://img.youtube.com/vi/DTu_FsYm7H8/hqdefault.jpg" 
+           style="width:100%;display:block;object-fit:cover;aspect-ratio:9/16;object-position:center;"
+           alt="South Orangetown area video by @siscamoves"/>
+      <!-- Play button overlay -->
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(6,8,15,0.45);">
+        <div style="width:64px;height:64px;border-radius:50%;background:#FF0000;display:flex;align-items:center;justify-content:center;margin-bottom:12px;box-shadow:0 4px 20px rgba(255,0,0,0.4);">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="8,5 19,12 8,19"/></svg>
+        </div>
+        <span style="font-family:'Playfair Display',serif;font-size:16px;color:#fff;font-weight:700;">Watch on YouTube</span>
+        <span style="font-size:11px;color:#A5B4FC;margin-top:4px;letter-spacing:1px;">@siscamoves</span>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- LOAN TYPES -->
+<div class="section">
+  <div class="section-tag">Know Your Options</div>
+  <h2>Not All Loans Are Created Equal</h2>
+  <div class="loan-cards">
+
+    <div class="loan-card">
+      <div class="loan-top">
+        <div class="loan-name">Conventional Loan</div>
+        <div class="loan-tag">Strong Credit</div>
+      </div>
+      <div class="loan-detail">
+        Down payment: <span>5–20%</span> · Credit score: <span>620+</span><br>
+        Competitive rates, flexible terms. PMI applies under 20% down. Best for buyers with stable income and solid credit history.
+      </div>
+    </div>
+
+    <div class="loan-card featured">
+      <div class="loan-top">
+        <div class="loan-name">FHA Loan</div>
+        <div class="loan-tag pop">Most Popular</div>
+      </div>
+      <div class="loan-detail">
+        Down payment: <span>as low as 3.5%</span> · Credit score: <span>580+</span><br>
+        Government-backed, flexible qualification standards. The most common choice for first-time buyers in Rockland County.
+      </div>
+    </div>
+
+    <div class="loan-card">
+      <div class="loan-top">
+        <div class="loan-name">VA Loan</div>
+        <div class="loan-tag">Veterans Only</div>
+      </div>
+      <div class="loan-detail">
+        Down payment: <span>0%</span> · No PMI required<br>
+        Exclusively for eligible veterans and active military. One of the best mortgage products available — if you qualify, use it.
+      </div>
+    </div>
+
+    <div class="loan-card">
+      <div class="loan-top">
+        <div class="loan-name">USDA Loan</div>
+        <div class="loan-tag">Rural Areas</div>
+      </div>
+      <div class="loan-detail">
+        Down payment: <span>0%</span> · Income limits apply<br>
+        For eligible rural and suburban areas. Worth checking if you're looking at properties outside the core of South Orangetown.
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- DOWN PAYMENT PROGRAMS -->
+<div class="section">
+  <div class="section-tag">Money on the Table</div>
+  <h2>Down Payment Assistance Programs You Should Know</h2>
+  <div class="programs">
+    <div class="program">
+      <strong>SONYMA — Achieving the Dream</strong>
+      <span>New York State's lowest interest rate mortgage program. Just 3% down with down payment assistance available. Designed for first-time buyers with good credit and stable employment. Income limits apply.</span>
+    </div>
+    <div class="program">
+      <strong>SONYMA — DPAL (Down Payment Assistance Loan)</strong>
+      <span>A forgivable loan for your down payment — no monthly payments, zero interest, fully forgiven after 10 years as long as you stay in the home. Stacks with SONYMA mortgage programs.</span>
+    </div>
+    <div class="program">
+      <strong>Rockland County First-Time Buyer Programs</strong>
+      <span>County-level assistance, employer-based housing benefits, and local grants are available. Many buyers never explore these because they assume they don't qualify. Talk to me before you assume anything is out of reach.</span>
+    </div>
+    <div class="program">
+      <strong>$1,500 Closing Credits*</strong>
+      <span>Eligible buyers who work with a Real agent and finance through One Real Mortgage may receive up to $1,500 toward closing costs. A real, tangible reduction in what you bring to the table on closing day.</span>
+    </div>
+  </div>
+</div>
+
+<!-- STEPS TO GET READY -->
+<div class="section">
+  <div class="section-tag">Your Action Plan</div>
+  <h2>How to Get Ready Before You Search</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">
+        <strong>Pull your credit report</strong>
+        <span>Know your score before any lender does. Errors on your report are more common than you'd think and they cost you money on your rate.</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">
+        <strong>Reduce high-interest debt</strong>
+        <span>Your debt-to-income ratio is one of the biggest factors lenders look at. Even small reductions can shift what you qualify for.</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">
+        <strong>Get pre-approved — not just pre-qualified</strong>
+        <span>Pre-qualification is a guess. Pre-approval is verified. In South Orangetown's competitive market, sellers take pre-approved buyers seriously and pre-qualified ones less so.</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-text">
+        <strong>Work with a local lender</strong>
+        <span>A lender who understands South Orangetown pricing trends gives you an edge. National banks don't always know the local picture. I can connect you with trusted lenders in Rockland County.</span>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-text">
+        <strong>Call me before you do anything else</strong>
+        <span>Strategy first. Listings second. The buyers who move smart in this market start with a plan, not a Zillow scroll.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BLOG POST -->
+<div class="blog">
+  <div class="section-tag">From the Agent</div>
+  <h2>You Don't Need 20% Down. You Just Need the Right Plan.</h2>
+
+  <p>The number one reason first-time buyers in South Orangetown sit on the sidelines is a myth. They believe they need 20% down to buy a home. <strong>That is simply not true.</strong> And it's costing people years of equity and appreciation they'll never get back.</p>
+
+  <p>South Orangetown sits in the heart of Rockland County — strong school districts, easy access to the Tappan Zee, commuter rail, and the kind of established neighborhoods where values hold. This is not a market to wait on. The buyers who figured out financing first are the ones who got in. The ones who waited are still waiting.</p>
+
+  <div class="pull-quote">"Pre-approval strengthens your offer immediately in competitive South Orangetown neighborhoods."</div>
+
+  <p>Here's what I tell every first-time buyer I sit down with: your financing structure is more important than the home you find first. FHA loans can get you in with as little as 3.5% down. SONYMA's programs offer forgivable down payment assistance that effectively turns a loan into a grant if you stay for 10 years. And there are county-level and employer-based benefits most people never even ask about.</p>
+
+  <p>The other piece nobody talks about is the difference between pre-qualification and pre-approval. <strong>Pre-qualification is a conversation. Pre-approval is a commitment.</strong> In a market where good homes move fast, sellers in South Orangetown are looking at offers from pre-approved buyers first. If you haven't done that step, you're already behind.</p>
+
+  <p>I help first-time buyers structure their financing approach, connect with trusted local lenders, evaluate pricing, and put together competitive offers. If you're thinking about buying your first home anywhere in Rockland or Bergen County, let's start with a conversation. One text is all it takes.</p>
+</div>
+
+<!-- BOTTOM CTA -->
+<div class="bottom-cta">
+  <p>Ready to talk about your first home?</p>
+  <a class="cta-btn" href="sms:18455774606">
+    <div class="cta-label">TAP TO TEXT ME NOW</div>
+    <div class="cta-number">(845) 577-4606</div>
+  </a>
+  <p class="handle">@siscamoves · Rockland · Bergen · Westchester · Staten Island</p>
+</div>
+
+</body>
+</html>
