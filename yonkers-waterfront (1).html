@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Yonkers Waterfront Is About to Change… Big Time | @siscamoves</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#050A0F;color:#E2E8F0;font-family:'Inter',sans-serif;min-height:100vh;}
+
+  /* HERO */
+  .hero{
+    background:linear-gradient(160deg,#0A1F12 0%,#050A0F 65%);
+    padding:52px 24px 44px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid #14391F;
+  }
+  .hero::before{
+    content:'';position:absolute;top:-80px;right:-60px;
+    width:280px;height:280px;border-radius:50%;
+    background:radial-gradient(circle,#166534 0%,transparent 70%);
+    opacity:0.3;
+  }
+  .hero::after{
+    content:'';position:absolute;bottom:-80px;left:-60px;
+    width:220px;height:220px;border-radius:50%;
+    background:radial-gradient(circle,#14532D 0%,transparent 70%);
+    opacity:0.2;
+  }
+
+  .breaking-badge{
+    display:inline-block;
+    border:1px solid #16A34A;
+    color:#4ADE80;
+    font-size:10px;
+    letter-spacing:2.5px;
+    padding:5px 16px;
+    border-radius:20px;
+    margin-bottom:20px;
+    background:rgba(22,163,74,0.1);
+  }
+
+  .hero-icon{
+    font-size:52px;
+    margin-bottom:16px;
+    position:relative;z-index:1;
+    line-height:1;
+  }
+
+  h1{
+    font-family:'Playfair Display',serif;
+    font-size:30px;
+    font-weight:900;
+    color:#FFFFFF;
+    line-height:1.2;
+    margin-bottom:10px;
+    position:relative;z-index:1;
+  }
+  h1 span{color:#4ADE80;}
+
+  .hero-sub{
+    font-size:14px;
+    color:#6B7280;
+    line-height:1.6;
+    margin-bottom:28px;
+    position:relative;z-index:1;
+  }
+  .hero-sub strong{color:#9CA3AF;}
+
+  /* STAT PILLS */
+  .stats{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:32px;
+    position:relative;z-index:1;
+  }
+  .stat-pill{
+    background:rgba(22,163,74,0.1);
+    border:1px solid #166534;
+    border-radius:8px;
+    padding:10px 16px;
+    text-align:center;
+  }
+  .stat-num{
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-weight:700;
+    color:#4ADE80;
+    line-height:1;
+    margin-bottom:3px;
+  }
+  .stat-label{
+    font-size:10px;
+    color:#6B7280;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+  }
+
+  /* CTA BUTTON */
+  .cta-btn{
+    display:block;
+    background:#15803D;
+    color:#fff;
+    text-decoration:none;
+    padding:18px 24px;
+    border-radius:12px;
+    font-size:13px;
+    letter-spacing:0.5px;
+    margin:0 auto;
+    max-width:320px;
+    position:relative;z-index:1;
+    transition:background 0.2s;
+  }
+  .cta-btn:active{background:#166534;}
+  .cta-label{font-size:11px;color:#BBF7D0;letter-spacing:1px;margin-bottom:4px;}
+  .cta-number{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;}
+
+  /* SECTION */
+  .section{padding:36px 24px;border-bottom:1px solid #0F1F15;}
+  .section-tag{font-size:10px;letter-spacing:2.5px;color:#16A34A;margin-bottom:12px;text-transform:uppercase;}
+  .section h2{font-family:'Playfair Display',serif;font-size:22px;color:#fff;margin-bottom:20px;line-height:1.3;}
+
+  /* TIMELINE */
+  .timeline{position:relative;padding-left:24px;}
+  .timeline::before{
+    content:'';position:absolute;left:7px;top:8px;bottom:8px;
+    width:1px;background:#14391F;
+  }
+  .tl-item{position:relative;margin-bottom:24px;}
+  .tl-dot{
+    position:absolute;left:-24px;top:4px;
+    width:14px;height:14px;border-radius:50%;
+    background:#15803D;border:2px solid #4ADE80;
+  }
+  .tl-year{font-size:10px;color:#4ADE80;letter-spacing:1px;margin-bottom:4px;font-weight:600;}
+  .tl-title{font-size:14px;color:#E2E8F0;font-weight:600;margin-bottom:3px;}
+  .tl-text{font-size:13px;color:#6B7280;line-height:1.6;}
+
+  /* WHAT IT MEANS */
+  .cards{display:flex;flex-direction:column;gap:14px;}
+  .card{
+    background:rgba(22,163,74,0.05);
+    border:1px solid #14391F;
+    border-radius:10px;
+    padding:16px;
+  }
+  .card-icon{font-size:22px;margin-bottom:8px;}
+  .card strong{display:block;font-size:14px;color:#E2E8F0;margin-bottom:4px;}
+  .card span{font-size:13px;color:#6B7280;line-height:1.6;}
+
+  /* BLOG */
+  .blog{padding:36px 24px;max-width:600px;margin:0 auto;}
+  .blog h2{font-family:'Playfair Display',serif;font-size:24px;color:#fff;line-height:1.3;margin-bottom:20px;}
+  .blog p{font-size:15px;color:#94A3B8;line-height:1.8;margin-bottom:18px;}
+  .blog p strong{color:#CBD5E1;}
+  .blog .pull-quote{
+    border-left:3px solid #16A34A;
+    padding:12px 16px;
+    background:rgba(22,163,74,0.05);
+    border-radius:0 8px 8px 0;
+    margin:24px 0;
+    font-family:'Playfair Display',serif;
+    font-size:17px;
+    color:#D1FAE5;
+    line-height:1.5;
+    font-style:italic;
+  }
+
+  /* BOTTOM CTA */
+  .bottom-cta{
+    background:#0A1F12;
+    border-top:1px solid #14391F;
+    padding:36px 24px;
+    text-align:center;
+  }
+  .bottom-cta p{font-size:13px;color:#4B5563;margin-bottom:16px;}
+  .handle{font-size:12px;color:#1F2937;letter-spacing:1px;margin-top:20px;}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="breaking-badge">BREAKING DEVELOPMENT · YONKERS</div>
+  <div class="hero-icon">🏭</div>
+  <h1>Yonkers Waterfront<br>Is About to Change…<br><span>Big Time.</span></h1>
+  <p class="hero-sub">The former Domino Sugar Refinery — <strong>33 acres on the Hudson</strong> — just hit the market. Here's what it means for you.</p>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat-pill">
+      <div class="stat-num">33</div>
+      <div class="stat-label">Acres</div>
+    </div>
+    <div class="stat-pill">
+      <div class="stat-num">2,650</div>
+      <div class="stat-label">Potential Units</div>
+    </div>
+    <div class="stat-pill">
+      <div class="stat-num">2,300+</div>
+      <div class="stat-label">Ft Hudson Frontage</div>
+    </div>
+    <div class="stat-pill">
+      <div class="stat-num">&lt;30</div>
+      <div class="stat-label">Min to Manhattan</div>
+    </div>
+  </div>
+
+  <a class="cta-btn" href="sms:18455774606">
+    <div class="cta-label">TAP TO TEXT ME NOW</div>
+    <div class="cta-number">(845) 577-4606</div>
+  </a>
+</div>
+
+<!-- TIMELINE -->
+<div class="section">
+  <div class="section-tag">How We Got Here</div>
+  <h2>A Century of Sugar — Now Something New</h2>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">1893</div>
+      <div class="tl-title">The Sugar House Opens</div>
+      <div class="tl-text">The Domino Sugar Refinery at 1 Federal Street begins operations on the Yonkers waterfront — a fixture of the city for over 130 years.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">JUNE 2025</div>
+      <div class="tl-title">Closure Announced</div>
+      <div class="tl-text">American Sugar Refining announces the refinery will shut down by end of 2025. About 300–350 workers are affected. Mayor Spano calls the site "one of the most valuable properties from here to Albany."</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">DEC 2025</div>
+      <div class="tl-title">Doors Close for Good</div>
+      <div class="tl-text">The refinery officially closes. Yonkers City Council expands downtown mixed-use zoning to include the 33-acre parcel, clearing the path for redevelopment.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year">APRIL 2026</div>
+      <div class="tl-title">The Refinery District Hits the Market</div>
+      <div class="tl-text">Cushman & Wakefield is retained to market the site — now branded The Refinery District. It's the last large-scale development opportunity on the Yonkers waterfront.</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT IT MEANS -->
+<div class="section">
+  <div class="section-tag">What This Means For You</div>
+  <h2>Why Every Buyer & Seller in Westchester Should Be Paying Attention</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">🏙️</div>
+      <strong>2,650 New Residential Units Coming</strong>
+      <span>Up to 2.6 million square feet of mixed-use development planned — housing, retail, cultural space, and waterfront access. This reshapes the entire neighborhood.</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">🚆</div>
+      <strong>Manhattan in Under 30 Minutes</strong>
+      <span>The site sits between the Yonkers and Ludlow Metro-North stations. Commuter demand in this pocket is only going up as the project takes shape.</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">📈</div>
+      <strong>Property Values Will Move</strong>
+      <span>Nearly 2,000 residential units have already been delivered nearby since 2018. This project is the next wave — and the ripple effect hits surrounding neighborhoods first.</span>
+    </div>
+    <div class="card">
+      <div class="card-icon">🌊</div>
+      <strong>2,300+ Feet of Hudson River Frontage</strong>
+      <span>Unobstructed water views, publicly accessible waterfront space, and a mixed-use destination that puts Yonkers on the map the same way Brooklyn's waterfront did for that borough.</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- BLOG POST -->
+<div class="blog">
+  <div class="section-tag">From the Agent</div>
+  <h2>The Last Big Piece of the Yonkers Waterfront Just Opened Up</h2>
+
+  <p>If you've been watching Yonkers for any amount of time, you already know this waterfront has been transforming for years. New buildings, new restaurants, new energy. But there was always this one massive piece that hadn't moved — the old Domino Sugar refinery sitting on 33 acres right on the Hudson. <strong>That just changed.</strong></p>
+
+  <p>American Sugar Refining closed the plant at the end of 2025 after more than 130 years of operation. It wasn't easy for the community — around 300 workers lost their jobs and this was a building most Yonkers residents simply called the Sugar House. But what comes next is what every buyer, seller, and investor in Westchester needs to understand right now.</p>
+
+  <div class="pull-quote">"One of the most valuable properties from here to Albany." — Yonkers Mayor Mike Spano</div>
+
+  <p>Cushman & Wakefield has been retained to market the site — now called The Refinery District — and the numbers are staggering. We're talking about potential for roughly 2,650 residential units, 2.6 million square feet of development, over 2,300 linear feet of Hudson River frontage, and a location that puts you in Midtown Manhattan in under 30 minutes on Metro-North. The city has already rezoned the land for mixed-use development. The path is clear.</p>
+
+  <p>Think about what happened to Brooklyn's waterfront when development moved in. <strong>Property values in surrounding neighborhoods moved first — before the buildings were even built.</strong> We are at that moment right now in Yonkers. The buyers who position themselves in this market today are the ones who look smart in five years.</p>
+
+  <p>Whether you're looking to buy in the area, thinking about selling while demand is climbing, or just want to understand what this means for your property value — this is the conversation to be having right now. I cover this market every day. Reach out and let's talk about what this means for your specific situation.</p>
+</div>
+
+<!-- BOTTOM CTA -->
+<div class="bottom-cta">
+  <p>Questions about Yonkers or Westchester real estate?</p>
+  <a class="cta-btn" href="sms:18455774606">
+    <div class="cta-label">TAP TO TEXT ME NOW</div>
+    <div class="cta-number">(845) 577-4606</div>
+  </a>
+  <p class="handle">@siscamoves · Rockland · Bergen · Westchester · Staten Island</p>
+</div>
+
+</body>
+</html>
